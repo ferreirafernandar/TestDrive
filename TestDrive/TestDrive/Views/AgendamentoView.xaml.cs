@@ -49,7 +49,6 @@ namespace TestDrive.Views
         {
             base.OnDisappearing();
             MessagingCenter.Unsubscribe<Agendamento>(this, "Agendamento");
-
             MessagingCenter.Unsubscribe<Agendamento>(this, "SucessoAgendamento");
             MessagingCenter.Unsubscribe<ArgumentException>(this, "FalhaAgendamento");
         }
