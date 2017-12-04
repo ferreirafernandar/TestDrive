@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using TestDrive.Models;
 using Xamarin.Forms;
 
@@ -11,28 +12,35 @@ namespace TestDrive
     {
         public async Task FazerLogin(Login login)
         {
-            try
+
+            using (var cliente = new HttpClient())
             {
-                using (var cliente = new HttpClient())
+                var camposFormulario = new FormUrlEncodedContent(new[]
                 {
-                    var camposFormulario = new FormUrlEncodedContent(new[]
-                    {
                     new KeyValuePair<string, string>("email", login.Usuario),
                     new KeyValuePair<string, string>("senha", login.Senha)
                 });
 
-                    cliente.BaseAddress = new Uri("https://aluracar.herokuapp.com");
-                    var resultado = await cliente.PostAsync("/login", camposFormulario);
-                    if (resultado.IsSuccessStatusCode)
-                        MessagingCenter.Send(new Usuario(), "SucessoLogin");
-                    else
-                        MessagingCenter.Send(new LoginException("Usuário ou senha incorretos"), "FalhaLogin");
+                cliente.BaseAddress = new Uri("https://aluracar.herokuapp.com");
+                var resultado = new HttpResponseMessage();
+                try
+                {
+                    resultado = await cliente.PostAsync("/login", camposFormulario);
                 }
+                catch (Exception)
+                {
+                    MessagingCenter.Send(new LoginException("Ocorreu um erro de comunicação com o servidor"), "FalhaLogin");
+                }
+                if (resultado.IsSuccessStatusCode)
+                {
+                    var conteudoResultado = await resultado.Content.ReadAsStringAsync();
+                    var resultadoLogin = JsonConvert.DeserializeObject<ResultadoLogin>(conteudoResultado);
+                    MessagingCenter.Send(resultadoLogin.usuario, "SucessoLogin");
+                }
+                else
+                    MessagingCenter.Send(new LoginException("Usuário ou senha incorretos"), "FalhaLogin");
             }
-            catch (Exception)
-            {
-                MessagingCenter.Send(new LoginException("Ocorreu um erro de comunicação com o servidor"), "FalhaLogin");
-            }
+
         }
     }
 

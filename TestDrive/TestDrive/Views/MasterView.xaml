@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDrive.Views.MasterView"
+            xmlns:converters="clr-namespace:TestDrive.Converters"
+             Title="Perfil do Usuário">
+    <TabbedPage.Resources>
+        <ResourceDictionary>
+            <converters:NagativoConverter x:Key="NagativoConverter"/>
+        </ResourceDictionary>
+    </TabbedPage.Resources>
+    <TabbedPage.Children>
+        <ContentPage Title="Usuário">
+            <Frame OutlineColor="Silver" VerticalOptions="CenterAndExpand" Margin="15">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label Text="{Binding Nome}" />
+                    <BoxView HeightRequest="1" HorizontalOptions="Fill" Color="Gray"/>
+                    <Label Text="{Binding Email}" />
+                    <BoxView HeightRequest="1" HorizontalOptions="Fill" Color="Gray"/>
+                    <Button Text="Perfil" Command="{Binding EditarPerfilCommand}"></Button>
+                </StackLayout>
+            </Frame>
+        </ContentPage>
+        <ContentPage Title="Editar">
+            <Frame OutlineColor="Silver" VerticalOptions="CenterAndExpand" Margin="15">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <TableView>
+                        <TableRoot>
+                            <TableSection Title="Dados Pessoais">
+                                <EntryCell Placeholder="Nome" Text="{Binding Nome}" IsEnabled="{Binding Editando}"/>
+                                <EntryCell Placeholder="Data de Nascimento" Text="{Binding DataNascimento}" IsEnabled="{Binding Editando}"/>
+                                <EntryCell Placeholder="Telefone" Text="{Binding Telefone}" IsEnabled="{Binding Editando}"/>
+                                <EntryCell Placeholder="E-mail" Keyboard="Email" Text="{Binding Email}" IsEnabled="{Binding Editando}"/>
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>
+                    <Button Text="Salvar" Command="{Binding SalvarCommand}" IsVisible="{Binding Editando}"/>
+                    <Button Text="Editar" Command="{Binding EditarCommand}" IsVisible="{Binding Editando, Converter={StaticResource NagativoConverter}}"/>
+                </StackLayout>
+            </Frame>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>

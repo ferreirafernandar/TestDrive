@@ -39,3 +39,5 @@ C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\obj\Debug\TestDriv
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\obj\Debug\TestDrive.Views.LoginView.xaml.g.cs
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\obj\Debug\TestDrive.dll
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\obj\Debug\TestDrive.pdb
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\obj\Debug\TestDrive.Views.MasterDetailView.xaml.g.cs
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\obj\Debug\TestDrive.Views.MasterView.xaml.g.cs
