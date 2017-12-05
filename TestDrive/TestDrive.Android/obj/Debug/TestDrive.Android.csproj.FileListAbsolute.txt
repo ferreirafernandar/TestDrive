@@ -117,3 +117,4 @@ C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\res\drawable\logo.png
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\res\drawable\perfil.png
