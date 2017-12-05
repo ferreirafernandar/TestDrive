@@ -1,2 +1,2 @@
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.UWP\TestDrive.UWP.csproj;x86
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\TestDrive.csproj;neutral
+E:\Fernanda\Projetos\TestDrive\TestDrive\TestDrive.UWP\TestDrive.UWP.csproj;x86
+E:\Fernanda\Projetos\TestDrive\TestDrive\TestDrive\TestDrive.csproj;neutral

@@ -22296,19 +22296,19 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Acdev\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\TestDrive.UWP.csproj",
+      "projectUniqueName": "E:\\Fernanda\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\TestDrive.UWP.csproj",
       "projectName": "TestDrive.UWP",
-      "projectPath": "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\TestDrive.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\project.json",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\obj\\",
+      "projectPath": "E:\\Fernanda\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\TestDrive.UWP.csproj",
+      "projectJsonPath": "E:\\Fernanda\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\project.json",
+      "packagesPath": "C:\\Users\\Acdev\\.nuget\\packages\\",
+      "outputPath": "E:\\Fernanda\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Acdev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
@@ -22318,8 +22318,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive\\TestDrive.csproj": {
-              "projectPath": "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive\\TestDrive.csproj"
+            "E:\\Fernanda\\Projetos\\TestDrive\\TestDrive\\TestDrive\\TestDrive.csproj": {
+              "projectPath": "E:\\Fernanda\\Projetos\\TestDrive\\TestDrive\\TestDrive\\TestDrive.csproj"
             }
           }
         }

@@ -1,4 +1,6 @@
-﻿using System.Windows.Input;
+﻿using System.IO;
+using System.Windows.Input;
+using TestDrive.Media;
 using TestDrive.Models;
 using Xamarin.Forms;
 
@@ -6,7 +8,6 @@ namespace TestDrive.ViewModels
 {
     public class MasterViewModel : BaseViewModel
     {
-        
         public MasterViewModel(Usuario usuario)
         {
             _usuario = usuario;
@@ -37,7 +38,7 @@ namespace TestDrive.ViewModels
             set => _usuario.email = value;
         }
 
-        private bool _editando = false ;
+        private bool _editando = false;
 
         public bool Editando
         {
@@ -53,16 +54,20 @@ namespace TestDrive.ViewModels
 
         public ImageSource FotoPerfil
         {
-            get { return _fotoPerfil = "perfil.png"; }
-            private set { _fotoPerfil = "perfil.png"; }
+            get => _fotoPerfil;
+            private set
+            {
+                _fotoPerfil = value;
+                OnPropertyChanged();
+            }
         }
-
 
         private readonly Usuario _usuario;
 
         public ICommand EditarPerfilCommand { get; private set; }
         public ICommand SalvarCommand { get; private set; }
         public ICommand EditarCommand { get; private set; }
+        public ICommand TirarFotoCommand { get; private set; }
 
         private void DefinirComandos(Usuario usuario)
         {
@@ -77,9 +82,21 @@ namespace TestDrive.ViewModels
                 MessagingCenter.Send(usuario, "SucessoSalvarPerfil");
             });
 
-            EditarCommand  = new Command(() =>
+            EditarCommand = new Command(() =>
             {
-                Editando = true;
+               Editando = true;
+            });
+
+            TirarFotoCommand = new Command(() =>
+            {
+                DependencyService.Get<ICamera>().TirarFoto();
+            });
+
+            MessagingCenter.Subscribe<byte[]>(this, "FotoTirada",
+            (bytes) =>
+            {
+                FotoPerfil = ImageSource.FromStream(
+                    () => new MemoryStream(bytes));
             });
         }
     }

@@ -11,8 +11,7 @@
 namespace TestDrive.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive\\Views\\AgendamentoVi" +
-        "ew.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\Fernanda\\Projetos\\TestDrive\\TestDrive\\TestDrive\\Views\\AgendamentoView.xaml")]
     public partial class AgendamentoView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
