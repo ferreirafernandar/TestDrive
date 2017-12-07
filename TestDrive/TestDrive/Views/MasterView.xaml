@@ -18,7 +18,8 @@
                     <BoxView HeightRequest="1" HorizontalOptions="Fill" Color="Gray"/>
                     <Label Text="{Binding Email}" />
                     <BoxView HeightRequest="1" HorizontalOptions="Fill" Color="Gray"/>
-                    <Button Text="Perfil" Command="{Binding EditarPerfilCommand}"></Button>
+                    <Button Text="Perfil" Command="{Binding EditarPerfilCommand}"/>
+                    <Button Text="Meus Agendamentos" Command="{Binding MeusAgendamentosCommand}"/>
                 </StackLayout>
             </Frame>
         </ContentPage>

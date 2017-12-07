@@ -197,3 +197,11 @@ C:\Users\user\Desktop\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\as
 C:\Users\user\Desktop\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\user\Desktop\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\user\Desktop\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLite-net.dll
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLitePCLRaw.lib.e_sqlite3.dll
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLite-net.pdb
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLite-net.xml

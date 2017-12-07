@@ -13,6 +13,7 @@ namespace TestDrive.ViewModels
         {
             _usuario = usuario;
             DefinirComandos(usuario);
+            AssinarMensagens();
         }
 
         public string Nome
@@ -67,12 +68,18 @@ namespace TestDrive.ViewModels
         public ICommand SalvarCommand { get; private set; }
         public ICommand EditarCommand { get; private set; }
         public ICommand TirarFotoCommand { get; private set; }
+        public ICommand MeusAgendamentosCommand { get; private set; }
 
         private void DefinirComandos(Usuario usuario)
         {
             EditarPerfilCommand = new Command(() =>
             {
                 MessagingCenter.Send(usuario, "EditarPerfilCommand");
+            });
+
+            MeusAgendamentosCommand = new Command(() =>
+            {
+                MessagingCenter.Send(usuario, "MeusAgendamentosCommand");
             });
 
             SalvarCommand = new Command(() =>
@@ -83,16 +90,19 @@ namespace TestDrive.ViewModels
 
             EditarCommand = new Command(() =>
             {
-               Editando = true;
+                Editando = true;
             });
 
             TirarFotoCommand = new Command(() =>
             {
                 DependencyService.Get<ICamera>().TirarFoto();
             });
+        }
 
+        private void AssinarMensagens()
+        {
             MessagingCenter.Subscribe<byte[]>(this, "FotoTirada",
-            (bytes) =>
+            bytes =>
             {
                 FotoPerfil = ImageSource.FromStream(
                     () => new MemoryStream(bytes));

@@ -45,6 +45,7 @@ namespace TestDrive.Views
             MessagingCenter.Subscribe<Agendamento>(this, "SucessoAgendamento", async (msg) =>
             {
                 await DisplayAlert("Agendamento", "Agendamento salvo com sucesso!", "ok");
+                await Navigation.PopToRootAsync();
 
             });
 

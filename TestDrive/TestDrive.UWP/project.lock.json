@@ -23628,12 +23628,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\TestDrive\\TestDrive\\TestDrive.UWP\\TestDrive.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\TestDrive.UWP.csproj",
       "projectName": "TestDrive.UWP",
-      "projectPath": "C:\\Users\\user\\Desktop\\TestDrive\\TestDrive\\TestDrive.UWP\\TestDrive.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\user\\Desktop\\TestDrive\\TestDrive\\TestDrive.UWP\\project.json",
+      "projectPath": "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\TestDrive.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\project.json",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\TestDrive\\TestDrive\\TestDrive.UWP\\obj\\",
+      "outputPath": "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -23646,8 +23646,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\TestDrive\\TestDrive\\TestDrive\\TestDrive.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\TestDrive\\TestDrive\\TestDrive\\TestDrive.csproj"
+            "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive\\TestDrive.csproj": {
+              "projectPath": "C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive\\TestDrive.csproj"
             }
           }
         }

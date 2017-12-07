@@ -14,5 +14,15 @@ namespace TestDrive.Views
             Master = new MasterView(usuario);
             Detail = new NavigationPage(new ListagemView(usuario));
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            MessagingCenter.Subscribe<Usuario>(this, "MeusAgendamentosCommand", (_usuario) =>
+            {
+                Detail = new AgendamentoUsuarioView();
+                IsPresented = false;
+            });
+        }
     }
 }
