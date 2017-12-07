@@ -3,6 +3,7 @@ using System;
 using System.Net.Http;
 using System.Text;
 using System.Windows.Input;
+using TestDrive.Data;
 using TestDrive.Models;
 using Xamarin.Forms;
 
@@ -12,9 +13,9 @@ namespace TestDrive.ViewModels
     {
         const string URL_POST_AGENDAMENTO = "https://aluracar.herokuapp.com/salvaragendamento";
 
-        public AgendamentoViewModel(Veiculo veiculo)
+        public AgendamentoViewModel(Veiculo veiculo, Usuario usuario)
         {
-            Agendamento = new Agendamento { Veiculo = veiculo };
+            Agendamento = new Agendamento(usuario.nome, usuario.telefone, usuario.email, veiculo.Nome, veiculo.Preco);
 
             AgendarCommand = new Command(() =>
             {
@@ -27,10 +28,16 @@ namespace TestDrive.ViewModels
 
         public Agendamento Agendamento { get; set; }
 
-        public Veiculo Veiculo
+        public string Modelo
         {
-            get => Agendamento.Veiculo;
-            set => Agendamento.Veiculo = value;
+            get => Agendamento.Modelo;
+            set => Agendamento.Modelo = value;
+        }
+
+        public decimal Preco
+        {
+            get => Agendamento.Preco;
+            set => Agendamento.Preco = value;
         }
 
         public string Nome
@@ -97,18 +104,30 @@ namespace TestDrive.ViewModels
                 nome = Nome,
                 fone = Fone,
                 email = Email,
-                carro = Veiculo.Nome,
-                preco = Veiculo.Preco,
+                carro = Modelo,
+                preco = Preco,
                 dataAgendamento = dataHoraAgendamento
             });
 
             var conteudo = new StringContent(json, Encoding.UTF8, "application/json");
 
             var resposta = await cliente.PostAsync(URL_POST_AGENDAMENTO, conteudo);
+
+            SalvaAgendamentoDb();
+
             if (resposta.IsSuccessStatusCode)
                 MessagingCenter.Send(this.Agendamento, "SucessoAgendamento");
             else
                 MessagingCenter.Send(new ArgumentException(), "FalhaAgendamento");
+        }
+
+        private void SalvaAgendamentoDb()
+        {
+            using (var conexao = DependencyService.Get<ISQLite>().PegarConexao())
+            {
+                var dao = new AgendamentoDAO(conexao);
+                dao.Salvar(new Agendamento(Nome, Fone, Email, Nome, Preco));
+            }
         }
     }
 }

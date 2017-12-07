@@ -16,9 +16,9 @@
                     <ViewCell>
                         <ViewCell.View>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Nome}"  VerticalTextAlignment="Center"></Label>
-                                <Label Text=" - " VerticalTextAlignment="Center"></Label>
-                                <Label Text="{Binding PrecoFormatado}" FontAttributes="Bold" VerticalTextAlignment="Center"></Label>
+                                <Label Text="{Binding Nome}"  VerticalTextAlignment="Center"/>
+                                <Label Text=" - " VerticalTextAlignment="Center"/>
+                                <Label Text="{Binding Preco}" FontAttributes="Bold" VerticalTextAlignment="Center"/>
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>

@@ -9,9 +9,11 @@ namespace TestDrive.Views
     {
         public ListagemViewModel ViewModel { get; set; }
 
-        public ListagemView()
+        private readonly Usuario _usuario;
+        public ListagemView(Usuario usuario)
         {
             InitializeComponent();
+            _usuario = usuario;
             ViewModel = new ListagemViewModel();
             BindingContext = ViewModel;
         }
@@ -19,17 +21,7 @@ namespace TestDrive.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            MessagingCenter.Subscribe<Veiculo>(this, "VeiculoSelecionado",
-                (msg) =>
-                {
-                    Navigation.PushAsync(new DetalheView(msg));
-                });
-
-            MessagingCenter.Subscribe<Exception>(this, "FalhaListagem",
-                (msg) =>
-                {
-                    DisplayAlert("Erro", "Ocorreu um erro ao obter a listagem de veículos. Por favor tente novamente mais tarde.", "Ok");
-                });
+            AssinarMensagens();
 
             await ViewModel.GetVeiculos();
         }
@@ -37,7 +29,26 @@ namespace TestDrive.Views
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
+            CancelarMensagens();
+        }
 
+        private void AssinarMensagens()
+        {
+            MessagingCenter.Subscribe<Veiculo>(this, "VeiculoSelecionado",
+                (veiculo) =>
+                {
+                    Navigation.PushAsync(new DetalheView(veiculo, _usuario));
+                });
+
+            MessagingCenter.Subscribe<Exception>(this, "FalhaListagem",
+                (msg) =>
+                {
+                    DisplayAlert("Erro", "Ocorreu um erro ao obter a listagem de veículos. Por favor tente novamente mais tarde.", "Ok");
+                });
+        }
+
+        private void CancelarMensagens()
+        {
             MessagingCenter.Unsubscribe<Veiculo>(this, "VeiculoSelecionado");
             MessagingCenter.Unsubscribe<Exception>(this, "FalhaListagem");
         }

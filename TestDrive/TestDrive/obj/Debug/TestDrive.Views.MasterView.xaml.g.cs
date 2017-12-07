@@ -11,8 +11,7 @@
 namespace TestDrive.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive\\Views\\MasterView.xa" +
-        "ml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\user\\Desktop\\TestDrive\\TestDrive\\TestDrive\\Views\\MasterView.xaml")]
     public partial class MasterView : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

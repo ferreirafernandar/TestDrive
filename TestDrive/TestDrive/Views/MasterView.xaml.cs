@@ -28,7 +28,6 @@ namespace TestDrive.Views
         private void AssinarMensagens()
         {
             MessagingCenter.Subscribe<Usuario>(this, "EditarPerfilCommand", (usuario) => { CurrentPage = Children[1]; });
-
             MessagingCenter.Subscribe<Usuario>(this, "SucessoSalvarPerfil", (usuario) => { CurrentPage = Children[0]; });
         }
 

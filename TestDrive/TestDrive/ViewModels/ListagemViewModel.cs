@@ -71,7 +71,7 @@ namespace TestDrive.ViewModels
         }
     }
 
-    internal class VeiculoJson
+    public class VeiculoJson
     {
         public string Nome { get; set; }
         public int Preco { get; set; }
