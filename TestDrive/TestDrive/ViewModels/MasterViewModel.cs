@@ -69,18 +69,15 @@ namespace TestDrive.ViewModels
         public ICommand EditarCommand { get; private set; }
         public ICommand TirarFotoCommand { get; private set; }
         public ICommand MeusAgendamentosCommand { get; private set; }
+        public ICommand NovoAgendamentoCommand { get; private set; }
 
         private void DefinirComandos(Usuario usuario)
         {
-            EditarPerfilCommand = new Command(() =>
-            {
-                MessagingCenter.Send(usuario, "EditarPerfilCommand");
-            });
+            EditarPerfilCommand = new Command(() => MessagingCenter.Send(usuario, "EditarPerfilCommand"));
 
-            MeusAgendamentosCommand = new Command(() =>
-            {
-                MessagingCenter.Send(usuario, "MeusAgendamentosCommand");
-            });
+            MeusAgendamentosCommand = new Command(() => MessagingCenter.Send(usuario, "MeusAgendamentosCommand"));
+
+            NovoAgendamentoCommand = new Command(() => MessagingCenter.Send(usuario, "NovoAgendamentoCommand"));
 
             SalvarCommand = new Command(() =>
             {

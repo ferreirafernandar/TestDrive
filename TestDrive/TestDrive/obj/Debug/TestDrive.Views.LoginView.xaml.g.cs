@@ -11,7 +11,8 @@
 namespace TestDrive.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\user\\Desktop\\TestDrive\\TestDrive\\TestDrive\\Views\\LoginView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive\\Views\\LoginView.xam" +
+        "l")]
     public partial class LoginView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

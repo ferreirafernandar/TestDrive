@@ -28,7 +28,6 @@ C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\bin\Debug\Xamarin.
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\obj\Debug\TestDrive.csprojResolveAssemblyReference.cache
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\obj\Debug\TestDrive.csproj.CoreCompileInputs.cache
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\obj\Debug\TestDrive.MainPage.xaml.g.cs
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive\obj\Debug\TestDrive.App.xaml.g.cs

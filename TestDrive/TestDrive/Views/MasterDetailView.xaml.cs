@@ -18,11 +18,34 @@ namespace TestDrive.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            AssinarMensagens();
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            CancelarMensagens();
+        }
+
+        private void AssinarMensagens()
+        {
             MessagingCenter.Subscribe<Usuario>(this, "MeusAgendamentosCommand", (_usuario) =>
             {
-                Detail = new AgendamentoUsuarioView();
+                Detail = new NavigationPage(new AgendamentoUsuarioView());
                 IsPresented = false;
             });
+
+            MessagingCenter.Subscribe<Usuario>(this, "NovoAgendamentoCommand", (_usuario) =>
+            {
+                Detail = new NavigationPage(new ListagemView(_usuario));
+                IsPresented = false;
+            });
+        }
+
+        private void CancelarMensagens()
+        {
+            MessagingCenter.Unsubscribe<Usuario>(this, "MeusAgendamentosCommand");
+            MessagingCenter.Unsubscribe<Usuario>(this, "NovoAgendamentoCommand");
         }
     }
 }

@@ -11,7 +11,8 @@
 namespace TestDrive.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\user\\Desktop\\TestDrive\\TestDrive\\TestDrive\\Views\\MasterDetailView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\user\\OneDrive\\Projetos\\TestDrive\\TestDrive\\TestDrive\\Views\\MasterDetailV" +
+        "iew.xaml")]
     public partial class MasterDetailView : global::Xamarin.Forms.MasterDetailPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

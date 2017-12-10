@@ -8,7 +8,7 @@
     </ContentPage.BindingContext>
     <StackLayout VerticalOptions="Center" Margin="34">
         <Image Source="logo.png"></Image>
-        <Entry Placeholder="Usuário" Text="{Binding Usuario}"></Entry>
+        <Entry Placeholder="Usuário" Keyboard="Email" Text="{Binding Usuario}"></Entry>
         <Entry Placeholder="Senha" IsPassword="True" Text="{Binding Senha}"></Entry>
         <Button Text="Entrar" Command="{Binding EntrarCommand}"></Button>
     </StackLayout>

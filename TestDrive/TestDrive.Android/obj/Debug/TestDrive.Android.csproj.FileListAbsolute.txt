@@ -49,14 +49,6 @@ C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\res\values\styles.xml
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\R.cs.flag
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\uploadflags.txt
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\TestDrive.dll.mdb
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\TestDrive.Android.dll.mdb
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\TestDrive.Android.dll.mdb
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\TestDrive.dll.mdb
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
-C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\res\drawable\logo.png
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\res\drawable\perfil.png
 E:\Fernanda\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\TestDrive.Android.dll
@@ -205,3 +197,11 @@ C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLite-net.pdb
 C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\SQLite-net.xml
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\TestDrive.dll.mdb
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\bin\Debug\TestDrive.Android.dll.mdb
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\TestDrive.Android.dll.mdb
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\TestDrive.dll.mdb
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\user\OneDrive\Projetos\TestDrive\TestDrive\TestDrive.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
